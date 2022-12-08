@@ -18,7 +18,23 @@
 4. Коммиты *должны* иметь вменяемые описания.
 5. Рекомендуется, чтобы ваш репозиторий содержал файлы [.gitignore](https://docs.github.com/en/get-started/getting-started-with-git/ignoring-files) (для них имеется набор [шаблонов](https://github.com/github/gitignore)) и [requirements.txt](https://www.jetbrains.com/help/pycharm/managing-dependencies.html#create-requirements)
 
-## Docker 
+## Запуск в Google Colaboratory
+
+Перед запуском необходимо выполнить следующие команды 
+```
+!sudo apt-get install libmagickwand-dev
+!pip install --no-cache-dir \
+    opencv-python-headless==4.6.*\
+    rawpy==0.17.* \
+    pandas \
+    Pillow==7.1.2 \
+    scikit-image==0.16.2 \
+    scipy==1.4.1 \
+    tqdm \
+    Wand
+```
+
+## Локальный запуске через Docker
 
 Рекоммендуется запускать через WSL либо на Unix системах.
 

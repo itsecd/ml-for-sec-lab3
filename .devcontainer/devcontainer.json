@@ -3,7 +3,7 @@
 {
 	"name": "ml-for-sec-3",
 	"build": { "dockerfile": "../Dockerfile.cpu" },
-	"extensions": ["KevinRose.vsc-python-indent", "ms-python.python", "k--kato.intellij-idea-keybindings"],
+	"extensions": ["KevinRose.vsc-python-indent", "ms-python.python", "k--kato.intellij-idea-keybindings", "njpwerner.autodocstring"],
 	"forwardPorts": [8888],
 
 	// Features to add to the dev container. More info: https://containers.dev/features.

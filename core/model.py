@@ -29,7 +29,7 @@ class Model:
             model_path, custom_objects=custom_objects)
         
     def predict_coeffs(self, image):
-        prediction = self.model.predict(np.expand_dims(image, [0, -1]))
+        prediction = self.model.predict(np.expand_dims(image, [0, -1]), verbose=0)
 
         predicted_label = label2coefficient(
             prediction.flatten(), max_coefficients=self.max_coeffs)
